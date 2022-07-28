@@ -26,7 +26,7 @@ class StoreCustomerRequest extends FormRequest
     {
         return [
             
-            'name' =>['required '],
+            'name' =>['required'],
             'type' =>['required',Rule::in(['I','B', 'i', 'b'])],
             'email' => ['required', 'email'],
             'address' => ['required'],
